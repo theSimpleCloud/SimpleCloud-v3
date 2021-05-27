@@ -1,0 +1,18 @@
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+    implementation 'org.eclipse.aether:aether-impl:1.1.0'
+    implementation 'org.eclipse.aether:aether-connector-basic:1.1.0'
+    implementation 'org.eclipse.aether:aether-transport-file:1.1.0'
+    implementation 'org.eclipse.aether:aether-transport-http:1.1.0'
+    implementation 'org.apache.maven:maven-aether-provider:3.3.9'
+    implementation "eu.thesimplecloud.jsonlib:json-lib:1.0.9"
+
+}
+
+test {
+    useJUnitPlatform()
+}

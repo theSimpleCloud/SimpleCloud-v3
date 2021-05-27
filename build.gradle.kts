@@ -20,6 +20,12 @@ subprojects {
         plugin("org.jetbrains.kotlin.jvm")
     }
 
+    repositories {
+        maven {
+            setUrl("https://repo.thesimplecloud.eu/artifactory/list/gradle-release-local/")
+        }
+    }
+
     dependencies {
         implementation(kotlin("stdlib"))
         implementation("com.google.inject:guice:5.0.1")
